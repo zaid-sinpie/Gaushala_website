@@ -100,7 +100,6 @@ a:active{
   color: rgb(83, 185, 14);
 }
 
-
 /* dropdown */
 .dropdown {
   float: left;
@@ -223,9 +222,9 @@ input:checked + .slider:before {
   text-transform: uppercase;
   color: #221b5f;
   letter-spacing: 2px;
-  font-family: "Permanent Marker", cursive;
+  /* font-family: "Permanent Marker", cursive;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal; */
   text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
     0px -4px 10px rgba(255,255,255,0.3);
 }
@@ -288,6 +287,23 @@ section{
 
 .hidden{
   display: none;
+}
+
+/* donate */
+.donate{
+  color: white;
+  background: #eba741;
+  border-radius: 4px;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.donate:hover{
+  background: #d89a3e;
+  padding: 12px 17px;
 }
 
 /* Animations */
