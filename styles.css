@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background: rgb(241, 241, 241);
 }
 body::-webkit-scrollbar {
   display: none;
@@ -247,27 +248,6 @@ img{
   /* margin: 0rem 5rem; */
 }
 
-/* .dots{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 10%;
-    height: 20px;
-}
-
-.dot{
-    height: 10px;
-    width: 10px;
-    background: rgb(73, 73, 73);
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    cursor: pointer;
-}
-
-.dot-1{
-    background: rgb(167, 255, 109);
-} */
-
 section{
     height: 100vh;
     width: 100%;
@@ -337,109 +317,5 @@ section{
   100% {
     opacity: 1;
     top: 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .dropdown{
-    display: block;
-  }
-  body{
-    background: rgb(241, 241, 241);
-  }
-  .container{
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 20px;
-    align-items: center;
-  }
-  .nav{
-    display: none;
-  }
-  .navbar{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-    gap: 0px;
-  }
-  .icon-menu{
-    font-size: 1.5rem;
-  }
-  .dropdown:hover .dropdown-content{
-    display: block;
-    color: #130F35;
-  }
-  .dropdown-content{
-    left: 0rem;
-    text-transform: uppercase;
-    font-size: small;
-  }
-  .title{
-    font-size: large;
-    width: 80%;
-    text-align: center;
-    margin-left: 0%;
-  }
-  /* .images {
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    gap: 20px;
-    align-items: start;
-    padding-left: 45rem;
-    overflow: hidden;
-    gap: 30px;
-  }
-  
-  img{
-    background-size:contain;
-    animation: rotateImages 15s infinite;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  } */
-
-  .images{
-    height: 10rem;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    padding-left: 10%;
-  }
-  img{
-    animation: imageMove 15s infinite;
-    /* animation: none; */
-    height: 150px;
-    width: auto;
-  }
-  @keyframes imageMove {
-    0%{
-      transform: translateX(0%);
-    }
-    20%{
-      transform: translateX(-110%);
-    }
-    40%{
-      transform: translateX(-220%);
-    }
-    60%{
-      transform: translateX(-110%);
-    }
-    80%{
-      transform: translateX(0%);
-    }
-  }
-  .home{
-    flex-direction: column;
-    gap: 20px;
-  }
-  .header{
-    transform: rotate(0deg);
-  }
-  .details{
-    width: 100%;
-    text-align: justify;
   }
 }
