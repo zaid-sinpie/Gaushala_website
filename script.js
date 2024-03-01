@@ -3,6 +3,7 @@
 const home = document.querySelector('.home-tag');
 const homeDropdown = document.querySelector('.home-tag-dropdown');
 const homeRedirect = document.querySelector('.section-1');
+const donate = document.querySelector('.donate');
 
 
 //home redirect buttons
@@ -32,5 +33,10 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000); // Change image every 2 seconds
+  setTimeout(carousel, 10000); // Change image every 2 seconds
 }
+
+//donate button click page redirect
+donate.addEventListener('click',function(){
+  location.href = './pages/donate.html';
+});

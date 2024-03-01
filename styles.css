@@ -26,8 +26,8 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
-  gap: 4rem;
+  justify-content: space-around;
+  gap: 2rem;
 }
 
 .navbar {
@@ -48,7 +48,7 @@ body::-webkit-scrollbar {
 
 .nav {
   display: flex;
-  width: 40%;
+  width: 60%;
   justify-content: space-around;
   align-items: center;
 }
@@ -159,34 +159,18 @@ a:active {
 
 .title {
   margin-top: 100px;
-  width: 40%;
+  width: 50%;
   text-align: center;
   text-transform: uppercase;
   color: #221b5f;
   letter-spacing: 2px;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+
   /* font-family: "Permanent Marker", cursive;
   font-weight: 400;
   font-style: normal; */
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
-    0px -4px 10px rgba(255, 255, 255, 0.3);
 }
-
-/* .images {
-  width: 100%;
-  height: 20rem;
-  display: flex;
-  gap: 20px;
-  align-items: start;
-  padding-left: 45rem;
-  overflow: hidden;
-  gap: 30px;
-}
-
-img {
-  background-size: contain;
-  animation: rotateImages 15s infinite;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-} */
 
 section {
   height: 100vh;
@@ -195,17 +179,16 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: start;
-  gap: 23rem;
   padding: 20px 0px;
+  margin-top: 60px;
 }
 
 .home {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 10rem;
-  margin: 80px;
 }
 
 .header {
@@ -267,7 +250,18 @@ section {
 }
 
 .section-0{
-  max-width:500px
+  max-width:500px;
+}
+
+
+/* section 1 */
+
+.section-1{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* Animations */

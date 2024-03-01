@@ -75,6 +75,10 @@ form {
     /* position: relative; */
 }
 
+label{
+    display: flex;
+}
+
 .btn {
     background: rgb(124, 255, 124);
     padding: 2px;
