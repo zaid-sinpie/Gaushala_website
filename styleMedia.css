@@ -35,9 +35,8 @@
       display: none;
     }
     .navbar{
-      width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: start;
       align-items: center;
       flex-direction: row-reverse;
       gap: 0px;
