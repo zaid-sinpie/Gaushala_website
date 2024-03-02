@@ -1,16 +1,23 @@
 'use strict';
 
+//buttons
 const home = document.querySelector('.home-tag');
 const homeDropdown = document.querySelector('.home-tag-dropdown');
-const homeRedirect = document.querySelector('.section-1');
+const community = document.querySelector('.community-tag');
+const communityDropdown = document.querySelector('.community-tag-dropdown');
+
 const donate = document.querySelector('.donate');
+
+//sections
+const homeRedirect = document.querySelector('.section-1');
+const communityRedirect = document.querySelector('.section-2');
 
 
 //home redirect buttons
 home.addEventListener('click',function(e){
     e.preventDefault();
     homeRedirect.scrollIntoView({
-        behavior:'smooth'
+        behavior:'smooth',
     });
 });
 homeDropdown.addEventListener('click',function(e){
@@ -18,6 +25,20 @@ homeDropdown.addEventListener('click',function(e){
     homeRedirect.scrollIntoView({
         behavior:'smooth'
     });
+});
+
+//community redirect button
+community.addEventListener('click',function(e){
+  e.preventDefault();
+  communityRedirect.scrollIntoView({
+      behavior:'smooth',
+  });
+});
+communityDropdown.addEventListener('click',function(e){
+  e.preventDefault();
+  communityRedirect.scrollIntoView({
+      behavior:'smooth',
+  });
 });
 
 //images animation slideshow

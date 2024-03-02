@@ -1,4 +1,18 @@
 @media screen and (max-width: 600px) {
+  body{
+    position: relative;
+  }
+
+  /* container */
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0px;
+    align-items: center;
+    height: auto;
+  }
+
   /* navbar */
   .nav {
     display: none;
@@ -9,12 +23,14 @@
     align-items: center;
     flex-direction: row-reverse;
     gap: 0px;
+    height: 80px;
+    position: fixed;
   }
   .icon-menu {
     font-size: 1rem;
   }
   .logo{
-    font-size: 1rem;
+    font-size: .5rem;
   }
 
   /* dropdown */
@@ -29,8 +45,31 @@
     color: #130f35;
   }
   .dropdown-content {
-    left: 0rem;
+    left: 1rem;
+    top: 5rem;
     text-transform: uppercase;
     font-size: small;
+  }
+
+  /* images */
+  .mySlides{
+    width: 10vw;
+    width: fit-content;
+  }
+
+  /* //////////////////////////////////////////////////////////////////////////////// */
+  /* sectio 0 */
+  .section-0{
+    height: auto;
+  }
+
+  /* section 1 */
+  .section-1{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
   }
 }
