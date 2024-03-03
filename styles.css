@@ -286,11 +286,43 @@ i{
   padding: 5rem 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   border-radius: 24px;
   border: 2px solid rgb(207, 207, 207);
   border-right: 4px solid #fcb852;
+  margin-top: 5rem;
+  gap: 5rem;
+}
+
+.section-2-container hr{
+  display: none;
+}
+
+/* member1 */
+.member{
+  display: flex;
+  justify-content:start;
+  gap: 6rem;
+  align-items: center;
+}
+
+.pres-img{
+  width: 25vw;
+  height: auto;
+}
+
+.pres-deatails{
+  width: 100%;
+}
+
+.pres-deatails h4{
+  font-weight: 400;
+}
+
+/* member2 */
+.member-2{
+  flex-direction: row-reverse;
 }
 
 .hidden {

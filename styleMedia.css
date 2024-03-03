@@ -122,4 +122,36 @@
     height: auto;
     border-radius: 6px;
   }
+
+  /* section 2 */
+
+  .section-2{
+    width: 95%;
+  }
+
+  .section-2-container{
+    margin: 0%;
+    margin-top: 4rem;
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+  }
+
+  .member{
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .section-2-container hr{
+    display: block;
+    width: 100%;
+    background: #000;
+  }
+  
+  .pres-deatails{
+    width: 90%;
+  }
+
+  .pres img{
+    width: 60vw;
+  }
 }
