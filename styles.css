@@ -214,19 +214,11 @@ section {
 
 .section-0-head{
   position: absolute;
-  left: 90%;
-  top: 30%;
-  width: 70%;
-  font-size: 1.5rem;
-  color: #000000;
-  padding: 30px 10px;
-  border-radius: 12px;
 }
 
 /* section 1 */
 .section-1{
   margin-top: 7.7rem;
-  background: rgb(255, 239, 145);
   background: #ffffff;
   display: flex;
   justify-content: center;
@@ -236,7 +228,6 @@ section {
 .section-1-container{
   width: 80%;
   height: auto;
-  background: rgba(255, 180, 110, 0.527);
   background: #fff;
   padding: 5rem 2rem;
   display: flex;
@@ -279,10 +270,29 @@ section {
   filter: brightness(80%);
 }
 
+i{
+  background: #bdbdbd;
+}
+
 /* section 2 */
 .section-2{
-  background: #00000036;
+  background: #fff;
 }
+
+.section-2-container{
+  width: 80%;
+  height: auto;
+  background: #fff;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 24px;
+  border: 2px solid rgb(207, 207, 207);
+  border-right: 4px solid #fcb852;
+}
+
 .hidden {
   display: none;
 }
