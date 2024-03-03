@@ -71,6 +71,7 @@
     justify-content: center;
     align-items: center;
     margin: 0%;
+    height: auto;
   }
 
   .section-1-container{
@@ -78,8 +79,10 @@
     height: 80%;
     padding: 3rem 2rem;
     justify-content: space-around;
-    align-items: start;
+    align-items: center;
     gap: 2rem;
+    border-left: 2px solid #fcb852;
+    margin: 2rem 0rem;
   }
 
   .section-1-details{
