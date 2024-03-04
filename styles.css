@@ -14,6 +14,7 @@ body {
   justify-content: space-around;
   align-items: center;
   background: rgb(241, 241, 241);
+  position: relative;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -36,7 +37,7 @@ body::-webkit-scrollbar {
   padding: 0px 30px;
   border-radius: 12px;
   height: 70px;
-  background: rgba(255, 255, 255,0.7);
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -210,6 +211,7 @@ section {
 .section-0{
   max-width:500px;
   position: relative;
+  margin-top: 74px;
 }
 
 .section-0-head{
@@ -377,6 +379,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 0rem;
 }
 
 footer article{
