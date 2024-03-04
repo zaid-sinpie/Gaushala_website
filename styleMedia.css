@@ -178,4 +178,18 @@
   .pres img {
     width: 60vw;
   }
+
+  /* footer */
+
+  footer{
+    font-size: small;
+  }
+
+  footer article{
+    gap: 1rem;
+  }
+
+  .footer-header{
+    width: 80%;
+  }
 }
