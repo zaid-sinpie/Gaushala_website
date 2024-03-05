@@ -7,6 +7,7 @@ const community = document.querySelector(".community-tag");
 const communityDropdown = document.querySelector(".community-tag-dropdown");
 const about = document.querySelector('.about-tag');
 const aboutDropdown = document.querySelector('.about-tag-dropdown');
+const copyEmail =document.querySelector('.copy');
 
 const donate = document.querySelector(".donate");
 
@@ -95,3 +96,11 @@ document.onscroll = function () {
     }
   });
 };
+
+//onclick email copy to clipboard
+copyEmail.addEventListener('click', function() {
+  const textToCopy = 'kunalchavan@gmail.com';
+
+  navigator.clipboard.writeText(textToCopy)
+    .catch(err => alert('Could not copy text: ', err));
+});
