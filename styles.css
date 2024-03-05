@@ -209,7 +209,6 @@ section {
 
 /* sectio-0 */
 .section-0{
-  max-width:500px;
   position: relative;
   margin-top: 74px;
 }
@@ -380,6 +379,7 @@ footer{
   justify-content: center;
   align-items: center;
   padding: 2rem 0rem;
+  position: relative;
 }
 
 footer article{
@@ -444,6 +444,36 @@ footer article h4{
   font-size: small;
   color: #e3e3e35b;
   text-align: center;
+}
+
+/* footer modal and overlay */
+.terms-policy{
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  background: #fff;
+  border-left: 5px solid #ffa319;
+  border-radius: 6px;
+  z-index: 10;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  text-align: start;
+  color: #000000;
+  overflow: auto;
+}
+
+.terms-policy pre{
+  width: 60%;
+}
+
+footer .overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 5;
 }
 
 .hidden {
