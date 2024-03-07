@@ -32,20 +32,21 @@
     <section class="content-wrapper hover14" id="image-container" ondrop="drop(event)" ondragover="allowDrop(event)">
     </section>
     <input type="file" id="file-input" style="display: none;" accept="image/*">
-    <wrapper class="btns" id="handleBtns">
+    <wrapper class="btns hidden" id="handleBtns">
         <button class="add_remove_reset" id="add-image-btn">Add</button>
         <button class="add_remove_reset" id="remove-image-btn">Remove</button>
         <button class="add_remove_reset" id="reset-btn">Reset</button>
+        <button class="add_remove_reset" id="logout">logout</button>
     </wrapper>
     <div class="loginModal hidden">
         <h2>Login</h2>
         <div class="ipt">
             <label for="username">username</label>
-            <input type="text" id="username" autocomplete="off">
+            <input type="text" id="username" autocomplete="off" required>
             <label for="password">password</label>
-            <input type="password" id="password">
+            <input type="password" id="password" required>
         </div>
-        <button class="checkUser">Login</button>
+        <button class="checkUser" id="submit" type="submit">Login</button>
     </div>
     <div class="overlay hidden"></div>
     <script src="../script/gallery.js"></script>
