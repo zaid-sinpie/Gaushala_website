@@ -1,12 +1,11 @@
 "use strict";
 
 //selecting elements
-const container = document.getElementsByClassName("content-wrapper")[0];
+// const container = document.getElementsByClassName("content-wrapper")[0];
+// //data
+// let listOfImages = [0, 1, 2, 3];
 
-//data
-let listOfImages = [0, 1, 2, 3];
-
-//function to add html code inside section
+// // function to add html code inside section
 // const addImages = function () {
 //   let html = `<div class="hover14 column">
 //   <div>
@@ -22,8 +21,33 @@ let listOfImages = [0, 1, 2, 3];
 //     container.insertAdjacentHTML("beforeend", html);
 //   });
 // };
-//function execution
+// // function execution
 // addImages();
+const loginBtn = document.querySelector('.logo');
+const loginModal = document.querySelector('.loginModal');
+const overlay = document.querySelector('.overlay');
+
+let login = false;
+
+//add modal overlay
+
+
+loginBtn.addEventListener('click',function(){  
+  const username = document.querySelector('#username').value = '';
+  const password = document.querySelector('#password').value = '';
+  const submitBtn = document.querySelector('#password');
+  const handleBtns = document.querySelector('#handleBtns');
+
+  submitBtn.addEventListener('click',function(){
+    if (username === 'kunalchavan@gmail.com' && password === 'DaktdbwtztyrAt3bdswtybkd'){
+      handleBtns.classList.remove('hidden')
+    }
+    else{
+      handleBtns.classList.add('hidden');
+    }
+  })
+})
+
 
 // Function to add an image via file input
 function addImageFromFile(file) {
