@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../css/gallery.css">
     <script src="https://kit.fontawesome.com/bb6d64a46b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <navbar class="navbar">
         <div class="logo">
@@ -27,8 +29,15 @@
     </navbar>
     <h2>our activies</h2>
     <p>"Your contribution to our organization will be a great help in order to protect the cows."</p>
-    <section class="content-wrapper">
+    <section class="content-wrapper hover14" id="image-container" ondrop="drop(event)" ondragover="allowDrop(event)">
     </section>
+    <input type="file" id="file-input" style="display: none;" accept="image/*">
+        <wrapper class="btns">
+            <button class="add_remove_reset" id="add-image-btn">Add</button>
+            <button class="add_remove_reset" id="remove-image-btn">Remove</button>
+            <button class="add_remove_reset" id="reset-btn">Reset</button>
+        </wrapper>
     <script src="../script/gallery.js"></script>
 </body>
+
 </html>

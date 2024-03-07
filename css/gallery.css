@@ -22,8 +22,8 @@ body h2 {
   color: #fcb852;
   padding: 10px 20px;
   border-radius: 5px;
-  border:2px solid #b3b3b3;
-  border-right:4px solid #fcb852;
+  border: 2px solid #b3b3b3;
+  border-right: 4px solid #fcb852;
 }
 
 .content-wrapper {
@@ -50,6 +50,30 @@ body h2 {
   border: 1px solid #fff;
   border-style: groove;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  gap: 5px;
+}
+
+.add_remove_reset {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #fcb852;
+  font-size: larger;
+  font-weight: bolder;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+body img {
+  width: 200px;
 }
 
 figure p {
@@ -117,18 +141,18 @@ figure p {
 }
 
 /* image hover effect  */
-.hover14.column {
+img {
   position: relative;
   overflow: hidden;
   width: 15rem;
   height: auto;
 }
 
-.hover14.column figure {
+img {
   position: relative;
 }
 
-.hover14.column figure::before {
+img::before {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -143,7 +167,7 @@ figure p {
   opacity: 0;
 }
 
-.hover14.column figure:hover::before {
+img:hover::before {
   animation: circle 0.75s;
   cursor: pointer;
 }
