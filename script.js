@@ -1,106 +1,119 @@
 "use strict";
 
-//buttons
-const home = document.querySelector(".home-tag");
-const homeDropdown = document.querySelector(".home-tag-dropdown");
-const community = document.querySelector(".community-tag");
-const communityDropdown = document.querySelector(".community-tag-dropdown");
-const about = document.querySelector('.about-tag');
-const aboutDropdown = document.querySelector('.about-tag-dropdown');
-const copyEmail =document.querySelector('.copy');
+class Website {
+  constructor() {
+    //buttons
+    this.home = document.querySelector(".home-tag");
+    this.homeDropdown = document.querySelector(".home-tag-dropdown");
+    this.community = document.querySelector(".community-tag");
+    this.communityDropdown = document.querySelector(".community-tag-dropdown");
+    this.about = document.querySelector('.about-tag');
+    this.aboutDropdown = document.querySelector('.about-tag-dropdown');
+    this.copyEmail = document.querySelector('.copy');
+    this.donate = document.querySelector(".donate");
 
-const donate = document.querySelector(".donate");
+    //sections
+    this.homeRedirect = document.querySelector(".section-1");
+    this.communityRedirect = document.querySelector(".section-2");
+    this.aboutRedirect = document.querySelector('.about');
 
-//sections
-const homeRedirect = document.querySelector(".section-1");
-const communityRedirect = document.querySelector(".section-2");
-const aboutRedirect = document.querySelector('.about');
+    //images animation slideshow
+    this.myIndex = 0;
 
-//home redirect buttons
-home.addEventListener("click", function (e) {
-  e.preventDefault();
-  homeRedirect.scrollIntoView({
-    behavior: "smooth",
-  });
-});
-homeDropdown.addEventListener("click", function (e) {
-  e.preventDefault();
-  homeRedirect.scrollIntoView({
-    behavior: "smooth",
-  });
-});
-
-//community redirect button
-community.addEventListener("click", function (e) {
-  e.preventDefault();
-  communityRedirect.scrollIntoView({
-    behavior: "smooth",
-  });
-});
-communityDropdown.addEventListener("click", function (e) {
-  e.preventDefault();
-  communityRedirect.scrollIntoView({
-    behavior: "smooth",
-  });
-});
-
-//about redirect button
-about.addEventListener("click", function (e) {
-  e.preventDefault();
-  aboutRedirect.scrollIntoView({
-    behavior: "smooth",
-  });
-});
-aboutDropdown.addEventListener("click", function (e) {
-  e.preventDefault();
-  aboutRedirect.scrollIntoView({
-    behavior: "smooth",
-  });
-});
-
-
-//images animation slideshow
-let myIndex = 0;
-carousel();
-
-function carousel() {
-  let i;
-  let x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    //bind event listeners
+    this.bindEvents();
   }
-  myIndex++;
-  if (myIndex > x.length) {
-    myIndex = 1;
+
+  bindEvents() {
+    //home redirect buttons
+    this.home.addEventListener("click", (e) => {
+      e.preventDefault();
+      this.homeRedirect.scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+
+    this.homeDropdown.addEventListener("click", (e) => {
+      e.preventDefault();
+      this.homeRedirect.scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+
+    //community redirect button
+    this.community.addEventListener("click", (e) => {
+      e.preventDefault();
+      this.communityRedirect.scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+
+    this.communityDropdown.addEventListener("click", (e) => {
+      e.preventDefault();
+      this.communityRedirect.scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+
+    //about redirect button
+    this.about.addEventListener("click", (e) => {
+      e.preventDefault();
+      this.aboutRedirect.scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+
+    this.aboutDropdown.addEventListener("click", (e) => {
+      e.preventDefault();
+      this.aboutRedirect.scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+
+    //images animation slideshow
+    this.carousel();
+
+    //donate button click page redirect
+    this.donate.addEventListener("click", () => {
+      window.open("./pages/donate.html", '_blank');
+    });
+
+    //onclick email copy to clipboard
+    this.copyEmail.addEventListener('click', () => {
+      const textToCopy = 'kunalchavan@gmail.com';
+
+      navigator.clipboard.writeText(textToCopy)
+        .catch(err => alert('Could not copy text: ', err));
+    });
+
+    //scroll animation
+    document.onscroll = () => {
+      let elScroll = document.querySelectorAll(".scroll");
+      elScroll.forEach((el) => {
+        let positionEl = el.getBoundingClientRect();
+        let triggerEl = positionEl.top;
+
+        if (triggerEl < 600) {
+          el.classList.add("scroll--show");
+        }
+      });
+    };
   }
-  x[myIndex - 1].style.display = "block";
-  setTimeout(carousel, 10000); // Change image every 2 seconds
+
+  carousel() {
+    let x = document.getElementsByClassName("mySlides");
+    for (let i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    this.myIndex++;
+    if (this.myIndex > x.length) {
+      this.myIndex = 1;
+    }
+    x[this.myIndex - 1].style.display = "block";
+    //changing images every 10sec's
+    setTimeout(() => this.carousel(), 10000);
+  }
 }
 
-//donate button click page redirect
-donate.addEventListener("click", function () {
-  location.href = "./pages/donate.html";
-});
-
-
-//scroll animation
-let elScroll = document.querySelectorAll(".scroll");
-
-document.onscroll = function () {
-  elScroll.forEach((elScroll) => {
-    let positionEl = elScroll.getBoundingClientRect();
-    let triggerEl = positionEl.top;
-
-    if (triggerEl < 500) {
-      elScroll.classList.add("scroll--show");
-    }
-  });
-};
-
-//onclick email copy to clipboard
-copyEmail.addEventListener('click', function() {
-  const textToCopy = 'kunalchavan@gmail.com';
-
-  navigator.clipboard.writeText(textToCopy)
-    .catch(err => alert('Could not copy text: ', err));
-});
+// Instantiate the class
+const Gaushala = new Website();
