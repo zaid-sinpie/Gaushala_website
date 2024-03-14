@@ -80,7 +80,7 @@ class Website {
 
     //onclick email copy to clipboard
     this.copyEmail.addEventListener('click', () => {
-      const textToCopy = 'kunalchavan@gmail.com';
+      const textToCopy = 'abc@gmail.com';
 
       navigator.clipboard.writeText(textToCopy)
         .catch(err => alert('Could not copy text: ', err));
