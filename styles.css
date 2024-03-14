@@ -273,6 +273,7 @@ section {
 .header{
   font-size: larger;
   font-weight:400;
+  cursor: default;
 }
 
 .section-1-details-2, .section-1-details-4 p{
